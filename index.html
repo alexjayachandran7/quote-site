@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quotes</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="quote">Loading...</h1>
+
+  <script>
+    const quotes = [
+      "Stay hungry. Stay foolish.",
+      "Code. Break. Repeat.",
+      "Less talk. More build.",
+      "Discipline beats motivation.",
+      "Create your own luck."
+    ];
+
+    document.getElementById("quote").innerText =
+      quotes[Math.floor(Math.random() * quotes.length)];
+  </script>
+</body>
+</html>
